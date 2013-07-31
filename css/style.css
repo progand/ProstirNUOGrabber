@@ -1,0 +1,14 @@
+#message{
+    
+}
+.page-container, #all{
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    overflow: scroll;
+    box-shadow: rgb(151, 151, 151) 0px 0px 10px 2px;
+    margin: 20px 20px 20px 0;
+}
+#all{
+    box-shadow: red 0px 0px 10px 2px;
+}
