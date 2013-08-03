@@ -1,6 +1,6 @@
 links = [
     //"http://prostir.ua/orgs/view.html?2035002",
-    "http://prostir.ua/orgs/view.html?2012168"
+    "http://prostir.ua/orgs/view.html?1966368"
 ];
 
 init = function() {
@@ -32,7 +32,10 @@ parse = function(container) {
     var $properties = $main.find("b");
     $properties.each(function(index, element) {
         var $element = $(element);
-        var key = $element.text();
+        var key = $element.text().trim();
+        if(key[key.length-1]===":"){
+            key= key.substring(0,key.length-1).trim();           
+        }
         var $next = $element.nextAll("b").first();
         var elementOuterHTML = element.outerHTML;
         var elementPosition = html.indexOf(elementOuterHTML);
@@ -51,8 +54,12 @@ parseValue = function(value) {
     
     var splittedBR = value.split("<br>");
     $.each(splittedBR, function(index, item) {
+        item = item.trim();
         if(item[0]===":"){
             item = item.replace(":", "");
+        }
+        if(item[0]==="-"){
+            item = item.replace("-", "");
         }
         item = item.trim();
         item = S(item).replaceAll("↵", "").stripTags().s;
