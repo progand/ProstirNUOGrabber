@@ -11,6 +11,7 @@
         <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
+        <button id="load" class="btn btn-warning"> Load all </button>
         <button id="start" class="btn btn-primary"> Press to proceed </button>
         <div id="message"></div>        
         <hr>
