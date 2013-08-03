@@ -5,10 +5,7 @@
         <title>Prostir NUO Grabber</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
         <link href="css/style.css" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/lib/string.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        
     </head>
     <body>
         <button id="load" class="btn btn-warning"> Load all </button>
@@ -22,5 +19,10 @@
             echo "<div id='{$i}' class='page-container'></div>";
         }
         ?>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lib/string.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
